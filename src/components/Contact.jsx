@@ -2,6 +2,16 @@ import { FaEnvelope, FaPhone } from "react-icons/fa"
 import { FaMapLocation } from "react-icons/fa6"
 
 const Contact = () => {
+    const sendToWhatsApp = e =>{
+        e.preventDefault();
+        const number = '+2347063907095'
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        const url = `https://wa.me/${number}?text=Name:${name} Email:${email} Message:${message} `;
+        window.open(url, '_blank').focus();
+       
+    }
     return(
         <section id="Contact" className="py-[60px] lg:py-[100px] bg-[#f3f3f3]">
         <div className="mx-auto max-w-[1140px]">
@@ -32,7 +42,7 @@ const Contact = () => {
                             </h5>
                             <p>I'm here to answer any question you may have</p>
                         </div>
-                        <form>
+                        <form onSubmit={sendToWhatsApp}>
                             <div className="flex flex-wrap">
                                 <div className="w-full lg:w-2/4">
                                     <div className="mb-4">

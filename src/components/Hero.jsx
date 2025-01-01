@@ -9,7 +9,7 @@ const Hero = () => {
             data-aos="fade-in"
             data-aos-duration="2000"
             style={{
-                backgroundImage: `linear-gradient(to bottom, rgba(10, 10, 10, 0.8), rgba(0, 0, 0, 0.6)), url(${bg})`,
+                backgroundImage: `linear-gradient(to bottom, rgba(10, 10, 10, 0.5), rgba(0, 0, 0, 0.5)), url(${bg})`,
             }}
         >
             <div className="mx-auto max-w-[1140px]">

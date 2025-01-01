@@ -56,10 +56,10 @@ const Navigation = () => {
                    
                 </button>
 
-                <div className={`${isOpen ? 'h-44 navOpen': 'h-0'} overflow-hidden bg-white lg:h-auto lg:flex items-center basis-full grow transition-all duration-300 ease-linear`}>
+                <div className={`${isOpen ? 'h-44 bg-white': 'h-0'} overflow-hidden  lg:h-auto lg:flex items-center basis-full grow transition-all duration-300 ease-linear`}>
                     <ul className='flex-col  lg:flex-row flex lg:items-center ml-auto ' id='header-nav'>
                         {nav_items.map((el)=>(
-                            <li key={el.id} className='border-t border-[#e6e6e6] py-2'>
+                            <li key={el.id} className='border-t lg:border-t-0 border-[#e6e6e6] py-2'>
                             <Link to={`${el.title}`} activeClass={'text-primary'}spy={true} smooth={true} offset={0} duration={1000} className={`text-[15px] font-semibold ${isFixedClass || isOpen ? 'text-black' :'text-white '} py-8 px-4 hover:text-primary cursor-pointer`} >{el.title}</Link>
                         </li>
                         ))}

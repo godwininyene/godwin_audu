@@ -56,7 +56,7 @@ const Navigation = () => {
                    
                 </button>
 
-                <div className={`${isOpen ? 'h-44 bg-white': 'h-0'} overflow-hidden  lg:h-auto lg:flex items-center basis-full grow transition-all duration-300 ease-linear`}>
+                <div className={`${isOpen ? 'h-[195px] bg-white': 'h-0'} overflow-hidden  lg:h-auto lg:flex items-center basis-full grow transition-all duration-300 ease-linear`}>
                     <ul className='flex-col  lg:flex-row flex lg:items-center ml-auto ' id='header-nav'>
                         {nav_items.map((el)=>(
                             <li key={el.id} className='border-t lg:border-t-0 border-[#e6e6e6] py-2'>
